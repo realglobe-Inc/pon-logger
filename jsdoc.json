@@ -33,9 +33,155 @@
       "constructor": {
         "name": "PonLogger",
         "description": "Logger for pon",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "config",
+            "type": "Object",
+            "description": "",
+            "default": "{}",
+            "optional": true,
+            "nullable": ""
+          },
+          {
+            "name": "config.prefix",
+            "type": "string",
+            "description": "Log prefix",
+            "default": "",
+            "optional": true,
+            "nullable": ""
+          },
+          {
+            "name": "config.indent",
+            "type": "number",
+            "description": "Number of indent",
+            "default": "",
+            "optional": true,
+            "nullable": ""
+          }
+        ],
         "examples": []
-      }
+      },
+      "functions": [
+        {
+          "name": "notice",
+          "access": "",
+          "virtual": false,
+          "description": "Print notice message.",
+          "parameters": [
+            {
+              "name": "msg",
+              "type": "string",
+              "description": "Message to print.",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "info",
+          "access": "",
+          "virtual": false,
+          "description": "Print info message.",
+          "parameters": [
+            {
+              "name": "msg",
+              "type": "string",
+              "description": "Message to print.",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "debug",
+          "access": "",
+          "virtual": false,
+          "description": "Print debug message.",
+          "parameters": [
+            {
+              "name": "msg",
+              "type": "string",
+              "description": "Message to print.",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "trace",
+          "access": "",
+          "virtual": false,
+          "description": "Print trace message.",
+          "parameters": [
+            {
+              "name": "msg",
+              "type": "string",
+              "description": "Message to print.",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "warn",
+          "access": "",
+          "virtual": false,
+          "description": "Print warn message.",
+          "parameters": [
+            {
+              "name": "msg",
+              "type": "string",
+              "description": "Message to print.",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "error",
+          "access": "",
+          "virtual": false,
+          "description": "Print error message.",
+          "parameters": [
+            {
+              "name": "msg",
+              "type": "string",
+              "description": "Message to print.",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        },
+        {
+          "name": "fatal",
+          "access": "",
+          "virtual": false,
+          "description": "Print fatal message.",
+          "parameters": [
+            {
+              "name": "msg",
+              "type": "string",
+              "description": "Message to print.",
+              "default": "",
+              "optional": "",
+              "nullable": ""
+            }
+          ],
+          "examples": []
+        }
+      ]
     }
   ]
 }
