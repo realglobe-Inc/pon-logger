@@ -1,0 +1,41 @@
+{
+  "functions": [
+    {
+      "name": "create",
+      "access": "",
+      "virtual": false,
+      "description": "Create a PonLogger instance",
+      "parameters": [
+        {
+          "name": "args",
+          "type": "*",
+          "description": "",
+          "default": "",
+          "optional": "",
+          "nullable": ""
+        }
+      ],
+      "examples": [],
+      "returns": {
+        "type": "PonLogger",
+        "description": ""
+      }
+    }
+  ],
+  "classes": [
+    {
+      "name": "PonLogger",
+      "description": "",
+      "extends": [],
+      "access": "",
+      "virtual": false,
+      "fires": "",
+      "constructor": {
+        "name": "PonLogger",
+        "description": "Logger for pon",
+        "parameters": [],
+        "examples": []
+      }
+    }
+  ]
+}
