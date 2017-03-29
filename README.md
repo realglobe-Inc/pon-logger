@@ -1,4 +1,4 @@
- <img src="assets/images/clay-id-banner.png" alt="Title Banner"
+ <img src="assets/images/pon-logger-banner.png" alt="Title Banner"
                     height="148"
                     style="height:148px"
 />
