@@ -9,7 +9,7 @@ const pkg = require('./package.json')
 
 module.exports = readmeMdBud({
   pkg,
-  banner: 'assets/images/clay-id-banner.png',
+  banner: 'assets/images/pon-logger-banner.png',
   repo: pkg.repository,
   sections: 'doc/guides/*.md.hbs',
   badges: {
