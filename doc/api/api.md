@@ -1,4 +1,4 @@
-# pon-logger@1.0.1
+# pon-logger@1.0.2
 
 Logger for pon
 
