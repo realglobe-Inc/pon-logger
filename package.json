@@ -1,41 +1,29 @@
 {
   "name": "pon-logger",
-  "version": "2.0.2",
   "description": "Logger for pon",
-  "main": "lib",
-  "scripts": {
-    "test": "node ./ci/test.js",
-    "prepare": "node ./ci/build.js && node ./ci/shim.js && node ./ci/doc.js && ./ci/assets.js"
-  },
-  "repository": "realglobe-Inc/pon-logger",
-  "keywords": [
-    "Apache-2.0"
-  ],
+  "version": "2.0.2",
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishinish@gmail.com",
     "url": "http://okunishitaka.com"
   },
-  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/realglobe-Inc/pon-logger/issues"
   },
-  "homepage": "https://github.com/realglobe-Inc/pon-logger#readme",
   "dependencies": {
-    "co": "^4.6.0",
     "colorprint": "^4.1.0"
   },
   "devDependencies": {
-    "ababel": "^2.0.1",
-    "ababel-es2015": "^2.0.1",
-    "amocha": "^2.0.0",
+    "ababel": "^4.0.6",
+    "amocha": "^4.0.0",
     "ape-formatting": "^1.0.2",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^5.0.20",
+    "ape-tmpl": "^6.0.8",
     "ape-updating": "^4.1.0",
     "coz": "^6.0.20",
-    "filecopy": "^3.0.1",
+    "filecopy": "^4.0.0",
+    "fixpack": "^2.3.1",
     "injectmock": "^2.0.0",
     "pon-assets": "^1.1.5",
     "sg-templates": "^1.4.4",
@@ -43,7 +31,18 @@
     "writeout": "^2.1.0"
   },
   "engines": {
-    "node": ">=6",
+    "node": ">=7.6",
     "npm": ">=4"
+  },
+  "homepage": "https://github.com/realglobe-Inc/pon-logger#readme",
+  "keywords": [
+    "Apache-2.0"
+  ],
+  "license": "Apache-2.0",
+  "main": "lib",
+  "repository": "realglobe-Inc/pon-logger",
+  "scripts": {
+    "prepare": "node ./ci/build.js && node ./ci/shim.js && node ./ci/doc.js && ./ci/assets.js && fixpack",
+    "test": "node ./ci/test.js"
   }
 }

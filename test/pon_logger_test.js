@@ -5,21 +5,20 @@
 'use strict'
 
 const PonLogger = require('../lib/pon_logger.js')
-const { ok } = require('assert')
-const co = require('co')
+const {ok} = require('assert')
 
 describe('pon-logger', function () {
   this.timeout(3000)
 
-  before(() => co(function * () {
+  before(() => {
 
-  }))
+  })
 
-  after(() => co(function * () {
+  after(() => {
 
-  }))
+  })
 
-  it('Pon logger', () => co(function * () {
+  it('Pon logger', () => {
     let logger = new PonLogger()
     ok(logger)
     logger.notice('This is notice message')
@@ -28,7 +27,11 @@ describe('pon-logger', function () {
     logger.warn('This is warn message')
     logger.error('This is error message')
     logger.fatal('This is fatal message')
-  }))
+
+    logger.disabled = true
+    logger.notice('hoge')
+    logger.disabled = false
+  })
 })
 
 /* global describe, before, after, it */
