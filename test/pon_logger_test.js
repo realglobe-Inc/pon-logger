@@ -19,7 +19,7 @@ describe('pon-logger', function () {
   })
 
   it('Pon logger', () => {
-    let logger = new PonLogger()
+    const logger = new PonLogger({prefix: '[x]'})
     ok(logger)
     logger.notice('This is notice message')
     logger.info('This is info message')
@@ -31,6 +31,12 @@ describe('pon-logger', function () {
     logger.disabled = true
     logger.notice('hoge')
     logger.disabled = false
+
+    {
+      const withoutPrefix = logger.withoutPrefix()
+      withoutPrefix.debug('hoge')
+    }
+    logger.debug('hoge')
   })
 })
 
