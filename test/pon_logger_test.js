@@ -34,7 +34,7 @@ describe('pon-logger', function () {
 
     {
       const withoutPrefix = logger.withoutPrefix()
-      withoutPrefix.debug('hoge')
+      withoutPrefix.debug('hoge without prefix')
     }
     logger.debug('hoge')
   })
