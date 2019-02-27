@@ -1,7 +1,7 @@
 {
   "name": "pon-logger",
   "description": "Logger for pon",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "author": {
     "name": "Taka Okunishi",
     "email": "okunishinish@gmail.com",
